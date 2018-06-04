@@ -17,9 +17,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Groceries to get</h1>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-header">Groceries to get</div>
 
           <form id="groceryList">
             <div class="form-group">
@@ -48,8 +48,9 @@
 
         </div>
 
-        <div class="col">
-          <h1>Word play</h1>
+        <div class="card">
+          <div class="card-header">Word play</div>
+          <br>
           <form id="wordForm">
             <div class="form-group">
               <label for="userSentence">Please put in a sentence</label>
@@ -60,8 +61,10 @@
           <h1 id="sillySentance"></h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-header">Wordcount</div>
+        <br>
         <form id="wordCount">
           <label for="comment">Type sumthin</label>
           <textarea class="form-control" id="comment" rows="3"></textarea>
@@ -75,9 +78,13 @@
 
         </div>
       </div>
-      <div class="col-md-3 box">
-        <ul id="cardDeck">
-        </ul>
+      <div class="card">
+        <div class="card-header">All the cards!</div>
+        <br>
+        <div class="box">
+          <ul id="cardDeck">
+          </ul>
+        </div>
       </div>
     </div>
 

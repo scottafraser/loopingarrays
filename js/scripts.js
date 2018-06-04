@@ -3,6 +3,15 @@ $(function() {
   $("#groceryList").show();
 
 
+  // var thisThing = ['h1', 'label', 'button', 'input'];
+  //
+  // thisThing.forEach(function(thing) {
+  //   $(thing).click(function() {
+  //     alert("this is a " + thing + " element");
+  //   })
+  // });
+
+
   // grocery js
   $("#groceryList").submit(function(event) {
     event.preventDefault();
@@ -80,7 +89,7 @@ $(function() {
 
     comment = ($("#comment").val()).split(" ");
 
-    var count = comment.reduce((hash, word) => {
+    let count = comment.reduce((hash, word) => {
       hash [word] = hash [word] || 0;
       hash [word] ++;
       return hash;
@@ -92,6 +101,8 @@ $(function() {
     for(var i = 0; i < Object.keys(count).length; i++) {
 
       $('#listCount').append('<li>' + objects[i] + " shows up " + values[i] + " times." + '</li>');
+
+    //https:stackoverflow.com/questions/42334084/counting-occurrences-of-a-word-in-a-string-with-javascript-using-match/42334131#42334131
 
     };
   });

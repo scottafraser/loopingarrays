@@ -68,7 +68,32 @@ $(function() {
     });
   });
 
-  console.log(deck);
+  deck.forEach(function(list) {
+    $('#cardDeck').append('<li>' + list + '</li>');
 
+  });
+
+  $("#wordCount").submit(function(event) {
+    event.preventDefault();
+
+    var comment = [];
+
+    comment = ($("#comment").val()).split(" ");
+
+    var count = comment.reduce((hash, word) => {
+      hash [word] = hash [word] || 0;
+      hash [word] ++;
+      return hash;
+    }, {}) ;
+
+    var objects = (Object.keys(count));
+    var values = (Object.values(count));
+
+    for(var i = 0; i < Object.keys(count).length; i++) {
+
+      $('#listCount').append('<li>' + objects[i] + " shows up " + values[i] + " times." + '</li>');
+
+    };
+  });
 
 });

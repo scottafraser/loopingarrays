@@ -19,21 +19,21 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Favourite foods</h1>
+          <h1>Groceries to get</h1>
 
-          <form id="favFood">
+          <form id="groceryList">
             <div class="form-group">
-                <label for="food1">What's your most favourite food</label>
+                <label for="food1">First Item</label>
                 <input id="food1" type="text"class="form-control"></input>
             </div>
 
             <div class="form-group">
-                <label for="food2">What's your most favourite food</label>
+                <label for="food2">Second Item</label>
                 <input id="food2" type="text"class="form-control"></input>
             </div>
 
             <div class="form-group">
-                <label for="food3">What's your most favourite food</label>
+                <label for="food3">Third ItemItem</label>
                 <input id="food3" type="text"class="form-control"></input>
             </div>
 
@@ -41,12 +41,23 @@
           </form>
           <div id="listdiv">
             <ul id="list">
-              
+
             </ul>
 
           </div>
 
         </div>
+
+        <div class="col">
+          <h1>Word play</h1>
+          <form id="wordForm">
+            <div class="form-group">
+              <label for="userSentence">Please put in a sentence</label>
+              <input id="userSentence" class="form-control" ></input>
+            </div>
+            <button type="submit" class="btn btn-info">Here's a sentence</button>
+          </form>
+          <h1 id="sillySentance"></h1>
       </div>
     </div>
 

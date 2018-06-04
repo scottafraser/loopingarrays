@@ -82,6 +82,10 @@ $(function() {
 
   });
 
+  $("#showCards").click(function() {
+    $("#cardDeck").toggle();
+  });
+
   $("#wordCount").submit(function(event) {
     event.preventDefault();
 
